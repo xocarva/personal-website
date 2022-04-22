@@ -1,0 +1,25 @@
+@import './normalize.css';
+@import './header.css';
+@import './main.css';
+@import './aside.css';
+@import './footer.css';
+
+:root {
+    --primary-color: #02343F;
+    --secondary-color: #F0EDCC;
+    --background-color: #f7f5e6;
+    --background-secondary-color: #02343f7e;
+
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    color: var(--primary-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}

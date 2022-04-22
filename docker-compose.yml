@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  xoancarneiro-com:
+    container_name: xoancarneiro-com
+    build: .
+    ports:
+      - '8080:80'

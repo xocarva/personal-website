@@ -1,0 +1,115 @@
+.main {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+section {
+    margin: 3rem auto;
+}
+
+#about-me {
+    width: 80vw;
+    max-width: 1200px;
+}
+
+#about-me .title {
+    font-size: calc(2.2vw + 2.2vh + 2rem);
+}
+
+#about-me p {
+    font-size: calc(.5vw + .5vh + 0.8rem);
+}
+
+#about-me p span {
+    font-weight: bold;
+    font-size: calc(0.9vw + 0.9vh + 0.9rem);
+}
+
+#projects {
+    width: 80vw;
+}
+
+h2 {
+    text-align: center;
+    font-size: calc(1.1vw + 1.1vh + 1.1rem);
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.project-card {
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px 3px rgba(145, 145, 145, 0.618);
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .5s;
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+.card-screenshot {
+    height: 9.5rem;
+    width: 80%;
+    background-image: url('../images/xoancarneiro-com.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-icons {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card-stack {
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-description {
+    width: 80%;
+}
+
+.card-description, .stack-icon, .demo i, .repo i {
+    color: var(--secondary-color);
+}
+
+.stack-icon, .demo i, .repo i {
+    font-size: 1.2rem;
+}
+
+#stack {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#stack p {
+    font-size: calc(.5vw + .5vh + 0.8rem);
+    text-align: center;
+}
+
+.stack-logo-container {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: calc(.15vw + 1.5vh + 1.8rem);
+}
