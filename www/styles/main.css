@@ -9,7 +9,7 @@ section {
 }
 
 #about-me {
-    width: 80vw;
+    width: 75vw;
     max-width: 1200px;
 }
 
@@ -27,7 +27,7 @@ section {
 }
 
 #projects {
-    width: 80vw;
+    width: 75vw;
 }
 
 h2 {
@@ -96,7 +96,7 @@ h3 {
 }
 
 #stack {
-    width: 80vw;
+    width: 75vw;
     margin: 0 auto;
 }
 

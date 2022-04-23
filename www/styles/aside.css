@@ -4,6 +4,7 @@
     bottom: 5rem;
     display: flex;
     flex-direction: column;
-    font-size: calc(1.5vw + 1.5vh + 0.5vmin);
+    gap: 0.5rem;
+    font-size: calc(2vw + 2vh + 1vmin);
     z-index: 1;
 }
