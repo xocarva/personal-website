@@ -68,7 +68,6 @@ h3 {
 .card-screenshot {
     height: 9.5rem;
     width: 80%;
-    background-image: url('../images/xoancarneiro-com.png');
     background-size: contain;
     background-repeat: no-repeat;
     flex-grow: 0;
@@ -107,6 +106,10 @@ h3 {
     font-size: 1.2rem;
 }
 
+
+.demo i:hover, .repo i:hover {
+    transform: scale(1.1);
+}
 #stack {
     width: 75vw;
     margin: 0 auto;
