@@ -14,16 +14,16 @@ section {
 }
 
 #about-me .title {
-    font-size: calc(2.2vw + 2.2vh + 2rem);
+    font-size: clamp(3rem, 10vw - 2rem, 5rem);
 }
 
 #about-me p {
-    font-size: calc(.5vw + .5vh + 0.8rem);
+    font-size: clamp(1.2rem, 4vw - 2rem, 2rem);
 }
 
 #about-me p span {
     font-weight: bold;
-    font-size: calc(0.9vw + 0.9vh + 0.9rem);
+    font-size: clamp(1.2rem, 4vw - 2rem, 2rem);
 }
 
 #projects {
@@ -35,7 +35,7 @@ h2 {
     font-size: calc(1.1vw + 1.1vh + 1.1rem);
 }
 
-.projects-grid {
+#projects-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,13 +44,16 @@ h2 {
 
 .project-card {
     border-radius: 10px;
-    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
     box-shadow: 3px 3px 3px rgba(145, 145, 145, 0.618);
     width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 0.5s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -58,19 +61,37 @@ h2 {
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.5s ease;
+    background-image: unset;
+    background-color: var(--primary-color);
+
 }
 
 h3 {
-    color: var(--secondary-color);
     flex-grow: 0;
+    visibility: hidden;
+}
+
+h3 a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.project-card:hover > h3 {
+    visibility:visible;
 }
 
 .card-screenshot {
+    border-radius: 10px;
     height: 9.5rem;
     width: 80%;
     background-size: contain;
     background-repeat: no-repeat;
     flex-grow: 0;
+    visibility: hidden;
+}
+
+.project-card:hover > .card-screenshot {
+    visibility:visible;
 }
 
 .card-icons {
@@ -79,6 +100,11 @@ h3 {
     align-items: center;
     width: 100%;
     flex-grow: 0;
+    visibility: hidden;
+}
+
+.project-card:hover > .card-icons {
+    visibility:visible;
 }
 
 .card-stack {
@@ -96,6 +122,11 @@ h3 {
 .card-description {
     width: 80%;
     flex-grow: 1;
+    visibility: hidden;
+}
+
+.project-card:hover > .card-description {
+    visibility:visible;
 }
 
 .card-description, .stack-icon, .demo i, .repo i {
@@ -116,7 +147,7 @@ h3 {
 }
 
 #stack p {
-    font-size: calc(.5vw + .5vh + 0.8rem);
+    font-size: clamp(1.2rem, 4vw - 2rem, 2rem);
     text-align: center;
 }
 
@@ -126,5 +157,5 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    font-size: calc(.15vw + 1.5vh + 1.8rem);
+    font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
 }

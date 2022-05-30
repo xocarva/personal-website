@@ -10,14 +10,14 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="navbar">
-            <i id="burger-icon" class="fa-solid fa-align-justify burger-icon"></i>
+        <div id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <nav id="nav-menu">
             <ul class="nav-menu-items">
-                <li class="navbar-toggle">
-                    <i id="close-icon" class="fa-solid fa-xmark"></i>
-                </li>
                 <li id="about-me-li" class="nav-text">About Me</li>
                 <li id="projects-li" class="nav-text">Projects</li>
                 <li id="stack-li" class="nav-text">Stack</li>
@@ -42,46 +42,11 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3 class="card-title">Memory Ram</h3>
-                    <div class="card-screenshot" style="background-image: url('images/memoryram.png');"></div>
-                    <p class="card-description">To-Do list app</p>
-                    <div class="card-icons">
-                        <ul class="card-stack">
-                            <li class="stack-icon fa-brands fa-html5" title="HTML"></li>
-                            <li class="stack-icon fa-brands fa-css3" title="CSS"></li>
-                            <li class="stack-icon fa-brands fa-js" title="Javascript"></li>
-                            <li class="stack-icon fa-brands fa-docker" title="docker"></li>
-                        </ul>
-                        <span class="card-links">
-                            <a class="demo" href="https://memoryram.xoancarneiro.com" target="_blank" rel="noreferrer noopener" title="demo"><i class="fa-solid fa-eye"></i></a>
-                            <a class="repo" href="https://github.com/xocarva/memory-ram" target="_blank" rel="noreferrer noopener" title="repository"><i class="fa-brands fa-github"></i></i></a>
-                        </span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <h3 class="card-title">xoancarneiro.com</h3>
-                    <div class="card-screenshot" style="background-image: url('images/xoancarneiro-com.png');"></div>
-                    <p class="card-description">The website you are visiting right now :)</p>
-                    <div class="card-icons">
-                        <ul class="card-stack">
-                            <li class="stack-icon fa-brands fa-html5" title="HTML"></li>
-                            <li class="stack-icon fa-brands fa-css3" title="CSS"></li>
-                            <li class="stack-icon fa-brands fa-js" title="Javascript"></li>
-                            <li class="stack-icon fa-brands fa-docker" title="docker"></li>
-                        </ul>
-                        <span class="card-links">
-                            <a class="demo" href="https://xoancarneiro.com" target="_blank" rel="noreferrer noopener" title="demo"><i class="fa-solid fa-eye"></i></a>
-                            <a class="repo" href="https://github.com/xocarva/personal-website" target="_blank" rel="noreferrer noopener" title="repository"><i class="fa-brands fa-github"></i></i></a>
-                        </span>
-                    </div>
-                </article>
-            </div>
+            <div id="projects-grid"></div>
         </section>
         <section id="stack">
             <h2>Stack</h2>
-            <p>Technologies I’m learning and have used for my projects at least once.</p>
+            <p>Technologies I'm learning and have used for my projects at least once.</p>
             <ul class="stack-logo-container">
                 <li class="fa-brands fa-html5" title="HTML"></li>
                 <li class="fa-brands fa-css3" title="CSS"></li>

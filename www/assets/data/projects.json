@@ -1,0 +1,30 @@
+{
+    "memoryRam": {
+        "title": "Memory Ram",
+        "altTitle": "memory-ram",
+        "image": "assets/images/memoryram.png",
+        "description": "To-Do list app",
+        "technologies": [
+            "html5",
+            "css3",
+            "js",
+            "docker"
+        ],
+        "url": "https://memoryram.xoancarneiro.com",
+        "repository": "https://github.com/xocarva/memory-ram"
+    },
+    "personalWebsite": {
+        "title": "xoancarneiro.com",
+        "alt-title": "xoancarneiro-com",
+        "image": "assets/images/xoancarneiro-com.png",
+        "description": "The website you are visiting right now :)",
+        "technologies": [
+            "html5",
+            "css3",
+            "js",
+            "docker"
+        ],
+        "url": "https://xoancarneiro.com",
+        "repository": "https://github.com/xocarva/personal-website"
+    }
+}
