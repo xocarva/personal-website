@@ -105,13 +105,13 @@ h2 {
 .card-main {
     visibility:hidden;
     position: absolute;
-    width: 20rem;
+    width: 100%;
     height: 20rem;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .project-card:hover > .card-main {
