@@ -5,12 +5,12 @@
     align-items: center;
     justify-content: flex-end;
     z-index: 1;
-    top: 1.2rem;
-    right: 1.2rem;
+    top: calc(1.1vw + 1.1vh + 1.1rem);
+    right: calc(1.1vw + 1.1vh + 1.1rem);
 }
 
 #burger-menu {
-    width: calc(1.1vw + 1.1vh + 1.1rem);
+    width: 50px;
     height: 40px;
     position: relative;
     cursor: pointer;
@@ -102,7 +102,7 @@
     height: 60px;
     color: var(--primary-color);
     text-decoration: none;
-    font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
+    font-size: clamp(2rem, 8vw - 2rem, 3rem);
     cursor: pointer;
 }
 

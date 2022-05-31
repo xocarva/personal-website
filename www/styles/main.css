@@ -47,13 +47,21 @@ h2 {
     background-size: cover;
     background-position: center;
     box-shadow: 3px 3px 3px rgba(145, 145, 145, 0.618);
+    height: 20rem;
     width: 20rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     transition: 0.5s ease;
     overflow: hidden;
     position: relative;
+}
+
+.project-card:hover:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .project-card:hover {
@@ -61,8 +69,6 @@ h2 {
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.5s ease;
-    background-image: unset;
-    background-color: var(--secondary-color);
 
 }
 
@@ -75,20 +81,20 @@ h2 {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem;
+    transition: 0.5s ease;
+    position: absolute;
+    top: -5rem;
     visibility: hidden;
 }
 
 .project-card:hover > .card-header {
     visibility:visible;
+    top: 0;
 }
 
 .card-header h3 {
     margin: 0;
-}
-
-.card-header h3 a {
     color: var(--secondary-color);
-    text-decoration: none;
 }
 
 .card-header .card-description {
@@ -96,17 +102,44 @@ h2 {
     margin: 0;
 }
 
-.card-screenshot {
-    flex-grow: 1;
-    height: 10rem;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    visibility: hidden;
+.card-main {
+    visibility:hidden;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
-.project-card:hover > .card-screenshot {
+.project-card:hover > .card-main {
     visibility:visible;
+}
+
+.demo, .repo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-text, .repo-text {
+    color: var(--secondary-color);
+}
+
+.demo-link, .repo-link {
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.demo-link i, .repo-link i {
+    color: var(--secondary-color);
+}
+
+.main i:hover {
+    transform: scale(1.1);
 }
 
 .card-footer {
@@ -115,11 +148,15 @@ h2 {
     justify-content:space-around;
     align-items: center;
     width: 100%;
+    position: absolute;
+    bottom: -5rem;
     visibility: hidden;
+    transition: 0.5s ease;
 }
 
 .project-card:hover > .card-footer {
     visibility:visible;
+    bottom: 0rem;
 }
 
 .card-stack {
@@ -129,21 +166,9 @@ h2 {
     opacity: 40%;
 }
 
-.card-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.stack-icon, .demo i, .repo i {
+.stack-icon {
     color: var(--secondary-color);
-}
-
-.stack-icon, .demo i, .repo i {
     font-size: 1.2rem;
-}
-
-.demo i:hover, .repo i:hover {
-    transform: scale(1.1);
 }
 
 #stack {
@@ -162,5 +187,5 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
+    font-size: clamp(2rem, 8vw - 2rem, 4rem);
 }
