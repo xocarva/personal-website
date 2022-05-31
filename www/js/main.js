@@ -29,7 +29,8 @@ const loadProjects = async () => {
         const card = document.createElement( 'article' );
         card.className = `project-card ${ projects[ key ].altTitle }`;
         styleSheet.insertRule( `.${ projects[ key ].altTitle } { background-image: url(${ projects[ key ].image }) }` );
-
+        card.tabIndex = 0;
+        projectsGrid.appendChild( card );
 
         const header = document.createElement( 'header' );
         header.className = 'card-header';
@@ -104,8 +105,6 @@ const loadProjects = async () => {
             cardStack.appendChild( stackIcon );
         });
         footer.appendChild( cardStack );
-
-        projectsGrid.appendChild( card );
 
     };
 
