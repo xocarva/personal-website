@@ -14,8 +14,8 @@
         "repository": "https://github.com/xocarva/memory-ram"
     },
     "personalWebsite": {
-        "title": "xoancarneiro.com",
-        "alt-title": "xoancarneiro-com",
+        "title": "Personal Website",
+        "alt-title": "personal-website",
         "image": "assets/images/xoancarneiro-com.png",
         "description": "The website you are visiting right now :)",
         "technologies": [

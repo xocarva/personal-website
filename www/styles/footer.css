@@ -1,4 +1,4 @@
-footer {
+.main-footer {
     height: 5rem;
     background-color:var(--primary-color);
     color: var(--secondary-color);

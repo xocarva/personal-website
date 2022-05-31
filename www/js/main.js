@@ -25,12 +25,20 @@ const loadProjects = async () => {
 
     for ( const key in projects ) {
 
+
         const card = document.createElement( 'article' );
         card.className = `project-card ${ projects[ key ].altTitle }`;
         styleSheet.insertRule( `.${ projects[ key ].altTitle } { background-image: url(${ projects[ key ].image }) }` );
 
+
+        const header = document.createElement( 'header' );
+        header.className = 'card-header';
+        card.appendChild( header );
+
         const h3 = document.createElement( 'h3' );
         h3.className = 'card-title';
+        header.appendChild( h3 );
+
         const demoLink = document.createElement( 'a' );
         demoLink.href = projects[ key ].url;
         demoLink.target = '_blank';
@@ -38,7 +46,11 @@ const loadProjects = async () => {
         demoLink.title = `${ projects[ key ].title } demo`;
         demoLink.innerText = projects[ key ].title;
         h3.appendChild( demoLink );
-        card.appendChild( h3 );
+
+        const description = document.createElement( 'p' );
+        description.className = 'card-description';
+        description.innerText = projects[ key ].description;
+        header.appendChild( description );
 
         const screenshot = document.createElement( 'a' );
         screenshot.className = 'card-screenshot';
@@ -47,17 +59,11 @@ const loadProjects = async () => {
         screenshot.target = '_blank';
         screenshot.rel = 'noreferrer noopener';
         screenshot.title = `${ projects[ key ].title } demo`;
-        ;
         card.appendChild( screenshot );
 
-        const description = document.createElement( 'p' );
-        description.className = 'card-description';
-        description.innerText = projects[ key ].description;
-        card.appendChild( description );
-
-        const cardIcons = document.createElement( 'div' );
-        cardIcons.className = 'card-icons';
-        card.appendChild( cardIcons );
+        const footer = document.createElement( 'footer' );
+        footer.className = 'card-footer';
+        card.appendChild( footer );
 
         const cardStack = document.createElement( 'ul' );
         cardStack.className = 'card-stack';
@@ -67,11 +73,11 @@ const loadProjects = async () => {
             stackIcon.title = technology;
             cardStack.appendChild( stackIcon );
         });
-        cardIcons.appendChild( cardStack );
+        footer.appendChild( cardStack );
 
         const cardLinks = document.createElement( 'span' );
         cardLinks.className = 'card-links';
-        cardIcons.appendChild( cardLinks );
+        footer.appendChild( cardLinks );
 
         const demo = document.createElement( 'a' );
         demo.className = 'demo';
