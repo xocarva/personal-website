@@ -1,4 +1,33 @@
-{
+{   "inquilinoApp": {
+    "title": "Inquilino Perfecto",
+    "altTitle": "inquilino-perfecto",
+    "image": "assets/images/inquilino-app.png",
+    "description": "Lodging marketplace",
+    "technologies": [
+        "html5",
+        "css3",
+        "js",
+        "react",
+        "docker"
+    ],
+    "url": "https://inquilinoperfecto.xoancarneiro.com",
+    "repository": "https://github.com/xocarva/inquilino-perfecto-app"
+    },
+    "inquilinoApi": {
+        "title": "Inquilino Perfecto API",
+        "altTitle": "inquilino-perfecto-api",
+        "image": "assets/images/inquilino-api.png",
+        "description": "REST API",
+        "technologies": [
+            "html5",
+            "css3",
+            "js",
+            "node",
+            "docker"
+        ],
+        "url": "",
+        "repository": "https://github.com/xocarva/inquilino-perfecto-api"
+        },
     "memoryRam": {
         "title": "Memory Ram",
         "altTitle": "memory-ram",

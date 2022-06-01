@@ -50,26 +50,30 @@ const loadProjects = async () => {
         main.className = 'card-main';
         card.appendChild( main );
 
-        const demo = document.createElement( 'div' );
-        demo.className = 'demo';
-        main.appendChild( demo );
+        if( projects[ key ].url ){
 
-        const demoLink = document.createElement( 'a' );
-        demoLink.className = 'demo-link';
-        demoLink.href = projects[ key ].url;
-        demoLink.target = '_blank';
-        demoLink.rel = 'noreferrer noopener';
-        demoLink.title = `${ projects[ key ].title } demo`;
-        demo.appendChild( demoLink );
+            const demo = document.createElement( 'div' );
+            demo.className = 'demo';
+            main.appendChild( demo );
 
-        const demoIcon = document.createElement( 'i' );
-        demoIcon.className = 'fa-solid fa-eye';
-        demoLink.appendChild( demoIcon );
+            const demoLink = document.createElement( 'a' );
+            demoLink.className = 'demo-link';
+            demoLink.href = projects[ key ].url;
+            demoLink.target = '_blank';
+            demoLink.rel = 'noreferrer noopener';
+            demoLink.title = `${ projects[ key ].title } demo`;
+            demo.appendChild( demoLink );
 
-        const demoText = document.createElement( 'span' );
-        demoText.className = 'demo-text';
-        demoText.innerText = 'demo';
-        demo.appendChild( demoText );
+            const demoIcon = document.createElement( 'i' );
+            demoIcon.className = 'fa-solid fa-eye';
+            demoLink.appendChild( demoIcon );
+
+            const demoText = document.createElement( 'span' );
+            demoText.className = 'demo-text';
+            demoText.innerText = 'demo';
+            demo.appendChild( demoText );
+
+        }
 
         const repo = document.createElement( 'div' );
         repo.className = 'repo';
