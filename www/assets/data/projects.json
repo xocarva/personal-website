@@ -1,8 +1,21 @@
-{   "libraryApp": {
+{   "mygamesApi": {
+    "title": "MyGames API",
+    "altTitle": "mygames-api",
+    "image": "assets/images/mygames-api.png",
+    "description": "Laravel REST API",
+    "technologies": [
+        "php",
+        "laravel",
+        "docker"
+    ],
+    "url": "",
+    "repository": "https://github.com/xocarva/mygames-api"
+    },
+    "libraryApp": {
     "title": "Library App",
     "altTitle": "library-app",
     "image": "assets/images/library.png",
-    "description": "Library management with CRUD operations",
+    "description": "Library management React app",
     "technologies": [
         "html5",
         "css3",
@@ -17,10 +30,8 @@
     "title": "Library API",
     "altTitle": "library-api",
     "image": "assets/images/library-api.png",
-    "description": "REST API",
+    "description": "Node/Express.js REST API",
     "technologies": [
-        "html5",
-        "css3",
         "js",
         "node",
         "docker"
@@ -32,7 +43,7 @@
     "title": "Inquilino Perfecto",
     "altTitle": "inquilino-perfecto",
     "image": "assets/images/inquilino-app.png",
-    "description": "Lodging marketplace app with CRUD operations and user roles managent",
+    "description": "Lodging marketplace React app",
     "technologies": [
         "html5",
         "css3",
@@ -47,10 +58,8 @@
         "title": "Inquilino Perfecto API",
         "altTitle": "inquilino-perfecto-api",
         "image": "assets/images/inquilino-api.png",
-        "description": "REST API",
+        "description": "Node/Express.js REST API",
         "technologies": [
-            "html5",
-            "css3",
             "js",
             "node",
             "docker"
@@ -62,7 +71,7 @@
         "title": "Memory Ram",
         "altTitle": "memory-ram",
         "image": "assets/images/memoryram.png",
-        "description": "To-Do list app",
+        "description": "Vanilla JS to-do list app",
         "technologies": [
             "html5",
             "css3",
