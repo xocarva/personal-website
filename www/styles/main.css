@@ -99,6 +99,8 @@ h2 {
 
 .card-header .card-description {
     color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
     margin: 0;
 }
 

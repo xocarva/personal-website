@@ -1,8 +1,38 @@
-{   "inquilinoApp": {
+{   "libraryApp": {
+    "title": "Library App",
+    "altTitle": "library-app",
+    "image": "assets/images/library.png",
+    "description": "Library management with CRUD operations",
+    "technologies": [
+        "html5",
+        "css3",
+        "js",
+        "react",
+        "docker"
+    ],
+    "url": "https://library.xoancarneiro.com",
+    "repository": "https://github.com/xocarva/library-app"
+    },
+    "LibraryApi": {
+    "title": "Library API",
+    "altTitle": "library-api",
+    "image": "assets/images/library-api.png",
+    "description": "REST API",
+    "technologies": [
+        "html5",
+        "css3",
+        "js",
+        "node",
+        "docker"
+    ],
+    "url": "",
+    "repository": "https://github.com/xocarva/library-api"
+    },
+    "inquilinoApp": {
     "title": "Inquilino Perfecto",
     "altTitle": "inquilino-perfecto",
     "image": "assets/images/inquilino-app.png",
-    "description": "Lodging marketplace",
+    "description": "Lodging marketplace app with CRUD operations and user roles managent",
     "technologies": [
         "html5",
         "css3",
