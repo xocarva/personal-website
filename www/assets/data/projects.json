@@ -30,7 +30,7 @@
     "title": "Library API",
     "altTitle": "library-api",
     "image": "assets/images/library-api.png",
-    "description": "Node/Express.js REST API",
+    "description": "Node/Express REST API",
     "technologies": [
         "js",
         "node",
@@ -58,7 +58,7 @@
         "title": "Inquilino Perfecto API",
         "altTitle": "inquilino-perfecto-api",
         "image": "assets/images/inquilino-api.png",
-        "description": "Node/Express.js REST API",
+        "description": "Node/Express REST API",
         "technologies": [
             "js",
             "node",
