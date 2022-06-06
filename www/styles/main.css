@@ -183,7 +183,7 @@ h2 {
     text-align: center;
 }
 
-.stack-logo-container {
+#stack-logo-container {
     padding: 0;
     display: flex;
     flex-wrap: wrap;

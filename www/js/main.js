@@ -4,10 +4,13 @@ const aboutMeLi = document.getElementById( 'about-me-li' );
 const projectsLi = document.getElementById( 'projects-li' );
 const stackLi = document.getElementById( 'stack-li' );
 const projectsGrid = document.getElementById( 'projects-grid' );
+const stackLogos = document.getElementById( 'stack-logo-container' );
 const styleEl = document.createElement( 'style' );
 
 const toggleBurger = () => burgerMenu.classList.toggle( 'opened' );
 const toggleNav = () => navMenu.classList.toggle( 'active' );
+
+const stack = [];
 
 const loadData = async ( url ) => {
 
@@ -25,6 +28,9 @@ const loadProjects = async () => {
 
     for ( const key in projects ) {
 
+        projects[ key ].technologies.map( technology => {
+            if( !stack.includes( technology )) stack.push( technology );
+        });
 
         const card = document.createElement( 'article' );
         card.className = `project-card ${ projects[ key ].altTitle }`;
@@ -111,6 +117,13 @@ const loadProjects = async () => {
         footer.appendChild( cardStack );
 
     };
+
+    stack.map( technology => {
+        const stackItem = document.createElement( 'li' );
+        stackItem.className = `fa-brands fa-${ technology }`;
+        stackItem.title = technology;
+        stackLogos.appendChild( stackItem );
+    });
 
 };
 
