@@ -1,12 +1,25 @@
-{   "mygamesApi": {
+{   "mygamesApp": {
+    "title": "MyGames App",
+    "altTitle": "mygames-app",
+    "image": "assets/images/mygames-app.png",
+    "description": "Videogames library management React App",
+    "technologies": [
+        "html5",
+        "css3",
+        "js",
+        "react"
+    ],
+    "url": "",
+    "repository": "https://github.com/xocarva/mygames-app"
+    },
+    "mygamesApi": {
     "title": "MyGames API",
     "altTitle": "mygames-api",
     "image": "assets/images/mygames-api.png",
     "description": "Laravel REST API",
     "technologies": [
         "php",
-        "laravel",
-        "docker"
+        "laravel"
     ],
     "url": "",
     "repository": "https://github.com/xocarva/mygames-api"
